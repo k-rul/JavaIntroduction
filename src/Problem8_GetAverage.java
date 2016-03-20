@@ -11,12 +11,12 @@ public class Problem8_GetAverage {
         double b = in.nextDouble();
         double c = in.nextDouble();
 
-        System.out.println(String.format("%.2f", FindAvg(a,b,c)));
+        System.out.println(String.format("%s", FindAvg(a,b,c)));
 
     }
 
-    private static double FindAvg(double x, double y, double z){
+    private static String FindAvg(double x, double y, double z){
 
-        return (x+y+z)/3;
+        return Double.toString((x+y+z)/3);
     }
 }
